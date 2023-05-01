@@ -25,3 +25,7 @@ repos:
     rev: v0.9.0.2
     hooks:
       - id: shellcheck
+  - repo: https://github.com/jazzband/pip-tools
+    rev: 6.13.0
+    hooks:
+      - id: pip-compile
