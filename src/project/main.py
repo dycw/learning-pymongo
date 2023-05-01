@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+from loguru import logger
 import datetime as dt
 
 
@@ -13,3 +14,8 @@ post = dict(
     tags=["mongodb", "python", "pymongo"],
     date=dt.datetime.utcnow(),
 )
+
+
+posts = db["posts"]
+post_id = posts.insert_one(post).inserted_id
+print(post_id)
