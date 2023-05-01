@@ -1,3 +1,3 @@
-# `template-generic`
+# `learning-pymongo`
 
-Template for generic repositories
+Learning the `pymongo` package
